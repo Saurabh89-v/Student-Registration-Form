@@ -45,6 +45,8 @@ body {
   box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
 }
 
+
+
 .form-header {
   padding: 18px;
   text-align: center;
@@ -210,9 +212,25 @@ label {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+
+/* Desktop ke liye jo aapka code hai wo same rahega */
+
+/* Responsive fix */
+@media (max-width: 768px) { 
+  body {
+    padding: 10px;   /* thoda breathing space */
+  }
+
   .form-card {
-    width: 95%;          
+    width: 100%;           
+    max-width: 100%;       
+    margin: 0 auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  .form-body {
+    padding: 15px;   /* chhota padding mobile ke liye */
   }
 
   .form-row {
@@ -225,18 +243,38 @@ label {
   }
 
   .top-box, .bottom-box {
-    padding: 15px 20px;    
+    width: 100%; 
+    max-width: 100%;
+    padding: 15px 10px;    
     font-size: 16px;
+    text-align: center;   /* phone me text center aligned hoga */
+  }
+
+  .hobby-row {
+    flex-direction: column;   /* hobby checkboxes ek ek niche aayenge */
+    gap: 10px;
+  }
+
+  .courses {
+    flex-direction: column;   /* courses ek line me na chipke */
+    gap: 10px;
   }
 
   .btn-row {
     flex-direction: column;  
     align-items: stretch;
+    gap: 10px;
   }
 
   .gender-options {
-    flex-wrap: nowrap;      
+    flex-wrap: wrap;      
     justify-content: flex-start;
-    gap: 20px;
+    gap: 15px;
+  }
+
+  .qualification input {
+    width: 100%;    /* table ke andar inputs phone me full width lenge */
   }
 }
+
+
