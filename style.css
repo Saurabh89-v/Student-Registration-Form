@@ -44,9 +44,6 @@ body {
   overflow: hidden;
   box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
 }
-
-
-
 .form-header {
   padding: 18px;
   text-align: center;
@@ -116,21 +113,15 @@ label {
   margin: 20px 0 10px;
   color: #434343;
 }
-
-
-
 .hobbies {
   display: flex;
   flex-direction: column; 
   gap: 15px;            
 }
-
 .hobby-row {
   display: flex;
   gap: 125px;        
 }
-
-
 .courses {
   display: flex;
   gap: 40px;
@@ -140,19 +131,19 @@ label {
 .white-box {
   background: #fff;
   box-shadow: 0px 3px 6px rgba(75, 75, 75, 0.1);
-  margin: 0;                     /* Remove default margin */
+  margin: 0;                    
   padding: 0;
   overflow: hidden;
   border: 1px solid #f0f0f0;
-  border-top: none;             /* Remove the top border if extra line appears */
+  border-top: none;         
 }
 
 .qualification {
   width: 100%;
   border-collapse: collapse;
-  margin: 0;                     /* Remove top margin */
+  margin: 0;                    
   font-family: 'Segoe UI', sans-serif;
-  border-spacing: 0;            /* Ensure no gap from spacing */
+  border-spacing: 0;           
 }
 
 .qualification th {
@@ -163,7 +154,7 @@ label {
   text-align: center;
   padding: 14px 10px;
   border-bottom: 1px solid #e0e0e0;
-  border-top: none;             /* Ensure no top border creates spacing */
+  border-top: none;         
 }
 
 .qualification td {
@@ -185,9 +176,6 @@ label {
   border-color: #a445b2;
   box-shadow: 0 0 4px rgba(164, 69, 178, 0.3);
 }
-
-
-
 .btn-row {
   margin-top: 20px;
   display: flex;
@@ -202,7 +190,6 @@ label {
   cursor: pointer;
   font-weight: bold;
 }
-
 .btn-reset {
   background: #fefcfcf7;
 }
@@ -212,13 +199,10 @@ label {
   color: #fff;
 }
 
-
-/* Desktop ke liye jo aapka code hai wo same rahega */
-
-/* Responsive fix */
+/* Mobile Responsive fix */
 @media (max-width: 768px) { 
   body {
-    padding: 10px;   /* thoda breathing space */
+    padding: 10px;  
   }
 
   .form-card {
@@ -230,7 +214,7 @@ label {
   }
 
   .form-body {
-    padding: 15px;   /* chhota padding mobile ke liye */
+    padding: 15px; 
   }
 
   .form-row {
@@ -247,16 +231,16 @@ label {
     max-width: 100%;
     padding: 15px 10px;    
     font-size: 16px;
-    text-align: center;   /* phone me text center aligned hoga */
+    text-align: center;  
   }
 
   .hobby-row {
-    flex-direction: column;   /* hobby checkboxes ek ek niche aayenge */
+    flex-direction: column;  
     gap: 10px;
   }
 
   .courses {
-    flex-direction: column;   /* courses ek line me na chipke */
+    flex-direction: column;   
     gap: 10px;
   }
 
@@ -273,7 +257,7 @@ label {
   }
 
   .qualification input {
-    width: 100%;    /* table ke andar inputs phone me full width lenge */
+    width: 100%; 
   }
 }
 
